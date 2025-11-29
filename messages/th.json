@@ -1,0 +1,27 @@
+{
+  "common": {
+    "appName": "E-Customs",
+    "appDescription": "ระบบบริการศุลกากรอิเล็กทรอนิกส์",
+    "copyright": "© 2024 E-Customs Service"
+  },
+  "sidebar": {
+    "home": "หน้าแรก",
+    "company": "บริษัท",
+    "hello": "สวัสดี"
+  },
+  "home": {
+    "title": "งานทดสอบของนักพัฒนาซอฟต์แวร์"
+  },
+  "company": {
+    "title": "บริษัท",
+    "addCompany": "เพิ่มบริษัท"
+  },
+  "language": {
+    "switchToTh": "เปลี่ยนเป็นภาษาไทย",
+    "switchToEn": "เปลี่ยนเป็นภาษาอังกฤษ"
+  },
+  "theme": {
+    "switchToDark": "เปลี่ยนเป็น Dark Mode",
+    "switchToLight": "เปลี่ยนเป็น Light Mode"
+  }
+}

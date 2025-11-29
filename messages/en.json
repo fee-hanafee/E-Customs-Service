@@ -1,0 +1,27 @@
+{
+  "common": {
+    "appName": "E-Customs",
+    "appDescription": "Electronic Customs Service System",
+    "copyright": "© 2024 E-Customs Service"
+  },
+  "sidebar": {
+    "home": "Home",
+    "company": "Company",
+    "hello": "Hello"
+  },
+  "home": {
+    "title": "Web Developer Technical Assignment"
+  },
+  "company": {
+    "title": "Company",
+    "addCompany": "Add Company"
+  },
+  "language": {
+    "switchToTh": "Switch to Thai",
+    "switchToEn": "Switch to English"
+  },
+  "theme": {
+    "switchToDark": "Switch to Dark Mode",
+    "switchToLight": "Switch to Light Mode"
+  }
+}

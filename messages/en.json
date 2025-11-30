@@ -17,6 +17,7 @@
     "addCompany": "Add Company",
     "customerId": "Customer ID",
     "create": "Create",
+    "save": "Save",
     "taxId": "Tax ID",
     "companyPrefix": "Company Prefix",
     "companyNameTh": "Company Name (TH)",
@@ -65,6 +66,21 @@
     "login": "For the system for submitting applications for permission to bring goods into bonded warehouses / free zones",
     "reportForms": "Report Forms",
     "other": "Other",
+    "action": "Action",
+    "search": "Search",
+    "loading": "Loading...",
+    "confirmDelete": "Confirm Delete",
+    "deleteConfirmMessage": "Are you sure you want to delete",
+    "deleteWarning": " This action cannot be undone.",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "deleting": "Deleting...",
+    "detail": "Detail",
+    "edit": "Edit",
+    "active": "Active",
+    "inactive": "Inactive",
+    "noData": "No data available",
+    "no": "No",
     "sign": {
       "title": "E-Signature",
       "selectedItems": "Selected",
@@ -117,6 +133,17 @@
       "mobile": "Contact Mobile",
       "person": "Person",
       "addPerson": "Add Person"
+    },
+    "section": {
+      "basicInfo": "Basic Information",
+      "address": "Address",
+      "businessRole": "Business Role",
+      "contact": "Contact Information",
+      "privilege": "Privilege",
+      "customsOther": "Other Customs Information",
+      "taxIncentives": "Tax Incentives ID",
+      "guarantee": "Guarantee / Bond / Deposit",
+      "rubberRegistration": "Rubber Registration"
     }
   },
   "language": {

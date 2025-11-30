@@ -43,6 +43,7 @@ export default function Sidebar() {
 
   const isMobileQuery = useMediaQuery(theme.breakpoints.down("md"), {
     noSsr: true,
+    defaultMatches: false, // กำหนด default เป็น false เพื่อให้ server และ client ตรงกัน
   });
 
   useEffect(() => {
@@ -50,6 +51,7 @@ export default function Sidebar() {
   }, []);
 
   // ใช้ isMobileQuery หลังจาก mount แล้วเท่านั้น เพื่อหลีกเลี่ยง hydration mismatch
+  // ใช้ false เป็น default เพื่อให้ server และ client render เหมือนกัน
   const isMobile = mounted ? isMobileQuery : false;
 
   const menuItems = useMemo(
@@ -255,7 +257,7 @@ export default function Sidebar() {
 
   return (
     <>
-      {isMobile && !mobileOpen && (
+      {mounted && isMobile && !mobileOpen && (
         <IconButton
           color="inherit"
           aria-label="open drawer"

@@ -1,7 +1,7 @@
 {
   "common": {
     "appName": "E-Customs",
-    "appDescription": "Electronic Customs Service System",
+    "appDescription": "Electronic Customs System",
     "copyright": "© 2024 E-Customs Service"
   },
   "sidebar": {
@@ -10,18 +10,121 @@
     "hello": "Hello"
   },
   "home": {
-    "title": "Web Developer Technical Assignment"
+    "title": "Developer Test"
   },
   "company": {
     "title": "Company",
-    "addCompany": "Add Company"
+    "addCompany": "Add Company",
+    "customerId": "Customer ID",
+    "create": "Create",
+    "taxId": "Tax ID",
+    "companyPrefix": "Company Prefix",
+    "companyNameTh": "Company Name (TH)",
+    "companyNameEn": "Company Name (EN)",
+    "createDate": "Created Date",
+    "createBy": "Created By",
+    "updateDate": "Updated Date",
+    "updateBy": "Updated By",
+    "isActive": "Status",
+    "isDeleted": "Deleted",
+    "branchCode": "Branch Code",
+    "branchCodePlaceholder": "Select branch",
+    "headOffice": "Head Office",
+    "companyGroupType": "Group Code",
+    "addressTh": "Address (TH)",
+    "addressEn": "Address (EN)",
+    "provinceTh": "Province (TH)",
+    "districtTh": "District (TH)",
+    "provinceId": "Province ID",
+    "subdistrictTh": "Subdistrict (TH)",
+    "postalCode": "Postal Code",
+    "dEmailCorpId": "D-Mail Corp ID",
+    "telephone": "Phone",
+    "fax": "Fax",
+    "partyRole": "Buyer/Seller Role",
+    "sellerTradeLevel": "Seller Level",
+    "exporterCode": "Exporter Code (Sec. 19 bis)",
+    "warehouseId": "Warehouse ID",
+    "nswid": "NSW ID",
+    "customerLevel": "Customer Level",
+    "isCalculateCostWith5Decimal": "Calculate Cost with 5 Decimal [for small cost and large items]",
+    "isGeneralStandard": "General Scheme",
+    "isGoldCard": "Gold Card",
+    "isCustomerBroker": "Customer Broker",
+    "goldCardNo": "Gold Card No.",
+    "customerBrokerNo": "Customer Broker No.",
+    "agentCustomerSequenceNo": "Tax Refund Applicant ID",
+    "compensationPayeeRegistrationNo": "Compensation Payee Reg. No.",
+    "aeosRefNo": "AEOS Ref. No.",
+    "loginName": "Login Name",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "importReportForm": "Import Report Form",
+    "exportReportForm": "Export Report Form",
+    "exportReportFormAfterExport": "Export Report Form After Export",
+    "login": "For the system for submitting applications for permission to bring goods into bonded warehouses / free zones",
+    "reportForms": "Report Forms",
+    "other": "Other",
+    "sign": {
+      "title": "E-Signature",
+      "selectedItems": "Selected",
+      "noSelection": "No items selected",
+      "selectItems": "Select items",
+      "allSelected": "All selected",
+      "options": {
+        "customerSignsOwn": "Customer signs themselves",
+        "signInvoice": "Sign Invoice",
+        "signExportManifest": "Sign Export Manifest",
+        "signImportManifest": "Sign Import Manifest",
+        "signTransportPermit": "Sign Transport Permit",
+        "signShortShip": "Sign ShortShip"
+      }
+    },
+    "signNotAllowed": {
+      "title": "No Proxy Signing",
+      "selectedItems": "Selected",
+      "noSelection": "No items selected",
+      "selectItems": "Select items",
+      "allSelected": "All selected",
+      "options": {
+        "customerOnlySigner": "Customer only – no proxy",
+        "customerOnlySignerExport": "No proxy – Export Manifest",
+        "customerOnlySignerImport": "No proxy – Import Manifest",
+        "customerOnlySignerInvoice": "No proxy – Invoice",
+        "customerOnlySignerShortShip": "No proxy – ShortShip"
+      }
+    },
+    "others": {
+      "bondedManufacturingWarehose": "Bonded Manufacturing Warehose",
+      "freeZoneOperator": "Free Zone Operator",
+      "exportProcessingZoneOperator": "Export Processing Zone Operator",
+      "section19bis": "19 bis",
+      "guaranteeReferenceNumber": "Guarantee Reference Number",
+      "bondNo": "Bond No.",
+      "depositNo": "Deposit No.",
+      "isPayTherDepartmentFeeOf200BahtPerDocument": "Pay Ther Department Fee of 200 Baht per Document",
+      "rubberTraderRegistrationNo": "Rubber Trader Registration No.",
+      "rubberExporterRegistrationNo": "Rubber Exporter Registration No.",
+      "ltrBlockRubberManufacturerRegistrationNo": "LTR Block Rubber Manufacturer Registration No."
+    },
+    "contactPersonTitle": "Contact Person",
+    "contactPerson": {
+      "name": "Contact Name",
+      "position": "Position",
+      "telephone": "Contact Phone",
+      "email": "Contact Email",
+      "fax": "Contact Fax",
+      "mobile": "Contact Mobile",
+      "person": "Person",
+      "addPerson": "Add Person"
+    }
   },
   "language": {
-    "switchToTh": "Switch to Thai",
-    "switchToEn": "Switch to English"
+    "switchToTh": "Use Thai",
+    "switchToEn": "Use English"
   },
   "theme": {
-    "switchToDark": "Switch to Dark Mode",
-    "switchToLight": "Switch to Light Mode"
+    "switchToDark": "Dark Mode",
+    "switchToLight": "Light Mode"
   }
 }

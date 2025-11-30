@@ -8,7 +8,6 @@ export default function Header({
   buttonText,
   onClick = undefined,
 }) {
-  const theme = useTheme();
 
   return (
     <Paper

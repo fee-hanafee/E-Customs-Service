@@ -6,12 +6,12 @@ import { useTranslations } from 'next-intl';
 import List from './list';
 import { useRouter } from 'next/navigation';
 
-export default function Company() {
+export default function CompanyPage() {
     const t = useTranslations("company");
     const router = useRouter();
     return (
         <Container>
-             <Header title={t("title")} buttonText={t("addCompany")} onClick={() => {
+             <Header title="Company" buttonText={t("addCompany")} onClick={() => {
                 router.push('/company/create');
              }} />
              <List />

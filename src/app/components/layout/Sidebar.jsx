@@ -39,20 +39,12 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  const isMobileQuery = useMediaQuery(theme.breakpoints.down("md"), {
-    noSsr: true,
-    defaultMatches: false, // กำหนด default เป็น false เพื่อให้ server และ client ตรงกัน
-  });
+  const [isClient, setIsClient] = useState(false);
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   useEffect(() => {
-    setMounted(true);
+    setIsClient(true);
   }, []);
-
-  // ใช้ isMobileQuery หลังจาก mount แล้วเท่านั้น เพื่อหลีกเลี่ยง hydration mismatch
-  // ใช้ false เป็น default เพื่อให้ server และ client render เหมือนกัน
-  const isMobile = mounted ? isMobileQuery : false;
 
   const menuItems = useMemo(
     () => [
@@ -64,7 +56,7 @@ export default function Sidebar() {
 
   const handleListItemClick = (path) => {
     router.push(path);
-    if (isMobile) {
+    if (isClient && isMobile) {
       setMobileOpen(false);
     }
   };
@@ -91,7 +83,7 @@ export default function Sidebar() {
           position: "relative",
         }}
       >
-        {isMobile && (
+        {isClient && isMobile && (
           <IconButton
             onClick={handleDrawerToggle}
             sx={{
@@ -114,7 +106,7 @@ export default function Sidebar() {
             fontWeight: 700,
             letterSpacing: "0.5px",
             fontFamily: "var(--font-prompt)",
-            pr: isMobile ? 4 : 0,
+            pr: isClient && isMobile ? 4 : 0,
           }}
         >
           {t("common.appName")}
@@ -257,7 +249,7 @@ export default function Sidebar() {
 
   return (
     <>
-      {mounted && isMobile && !mobileOpen && (
+      {isClient && isMobile && !mobileOpen && (
         <IconButton
           color="inherit"
           aria-label="open drawer"
@@ -287,10 +279,7 @@ export default function Sidebar() {
         ModalProps={{
           keepMounted: true,
         }}
-        suppressHydrationWarning
         sx={{
-          width: DRAWER_WIDTH,
-          flexShrink: 0,
           "& .MuiDrawer-paper": {
             width: DRAWER_WIDTH,
             boxSizing: "border-box",
